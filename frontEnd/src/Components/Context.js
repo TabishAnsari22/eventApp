@@ -8,10 +8,9 @@ export const GlobalContext = createContext("Initial Value");
 
 let data = {
     user: {},
-    // addCarts: JSON.parse(localStorage.getItem("cartItem"))||[],
     isLogin: false,
     darkTheme: true,
-    baseUrl: (window.location.href.indexOf("https") === -1) ? "http://localhost:3000" : "https://ecommerce-crud-production.up.railway.app"
+    baseUrl: (window.location.href.indexOf("https") === -1) ? "http://localhost:3000" : "https://eventapp-production-7524.up.railway.app/"
 }
 
 
