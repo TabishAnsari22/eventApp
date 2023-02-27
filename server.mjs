@@ -10,21 +10,23 @@ let dbURI =
   process.env.MONGODBURI ||
   "mongodb+srv://tabish:1234@cluster0.wtc3jvl.mongodb.net/loginform?retryWrites=true&w=majority";
 const SECRET = process.env.SECRET || "topsecret";
-const port = process.env.PORT || 3000;
+const port = "https://ecommercewebsite-1c38e.web.app/" || 3000;
 
 const app = express();
 app.use(express.json());
 app.use(cookieParser());
 
 app.use(
-  cors({
-    origin: [
-      "http://localhost:3001",
-      "https://ecommercewebsite-221ee.web.app",
-      "*",
-    ],
-    credentials: true,
-  })
+  cors(
+  //   {
+  //   origin: [
+  //     "http://localhost:3001",
+  //     "https://ecommercewebsite-221ee.web.app",
+  //     "*",
+  //   ],
+  //   credentials: true,
+  // }
+  )
 );
 
 const userSchema = new mongoose.Schema({
