@@ -18,14 +18,14 @@ app.use(cookieParser());
 
 app.use(
   cors(
-  //   {
-  //   origin: [
-  //     "http://localhost:3001",
-  //     "https://ecommercewebsite-221ee.web.app",
-  //     "*",
-  //   ],
-  //   credentials: true,
-  // }
+    {
+    origin: [
+      "http://localhost:3001",
+      "https://ecommercewebsite-221ee.web.app",
+      "*",
+    ],
+    credentials: true,
+  }
   )
 );
 
