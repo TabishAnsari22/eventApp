@@ -21,7 +21,7 @@ app.use(
     {
     origin: [
       "http://localhost:3001",
-      "https://ecommercewebsite-221ee.web.app",
+      "https://ecommercewebsite-1c38e.web.app/",
       "*",
     ],
     credentials: true,
